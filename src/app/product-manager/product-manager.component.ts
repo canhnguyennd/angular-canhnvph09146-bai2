@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { Product } from '../Product';
-// import { data } from '../MockData';
+import { Product } from '../Product';
+import { data } from '../MockData';
 
 @Component({
   selector: 'app-product-manager',
@@ -13,7 +13,11 @@ export class ProductManagerComponent implements OnInit {
 
   ngOnInit() {
   }
-  // products = data;
+  productt = data;
+  selecteds: Product;
+  // showDetail(products){
+  //   this.selecteds = products;
+  // }
   
   
 
