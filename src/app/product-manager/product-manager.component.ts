@@ -13,11 +13,12 @@ export class ProductManagerComponent implements OnInit {
 
   ngOnInit() {
   }
-  productt = data;
-  selecteds: Product;
-  // showDetail(products){
-  //   this.selecteds = products;
-  // }
+  // productt = data;
+  products=data;
+
+  removeItem(id) {
+    return this.products = this.products.filter(p => p.id != id);
+  }
   
   
 

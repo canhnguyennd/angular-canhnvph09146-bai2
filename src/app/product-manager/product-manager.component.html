@@ -7,11 +7,11 @@
               <th>Price</th>
               <th>Action</th>
             </tr>
-            <tr>
-              <!-- <th>{{Product.id}}</th>
-              <th>{{Product.name}}</th> -->
-              <th>Price</th>
-              <th>Action</th>
-            </tr>
+            <tr *ngFor="let product of products">
+            <th>{{product.id}}</th>
+            <th>{{product.name}}</th>
+            <th>{{product.price}}</th>
+            <th> <button class="btn btn-primary" (click)="removeItem(product.id)">Remove</button></th>
+        </tr>
           </thead>
         </table>

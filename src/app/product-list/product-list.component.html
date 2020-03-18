@@ -9,14 +9,14 @@
 					<h4 class="card-title">
 						<a href="#">{{product.name}}</a>
 					</h4>
-					<h5>$24.99</h5>
+					<h5>{{product.price}}</h5>
 					<p class="card-text">{{product.desc}}</p>
           
 				</div>
 				<div class="card-footer">
           <button class="btn btn-primary" (click)="showDetail(product)">Click me!</button>
 					<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-          <button class="btn btn-primary" (click)="removeItem(product.id)">Click me!</button>
+          <button class="btn btn-primary" (click)="removeItem(product.id)">Remove!</button>
 				</div>
 		</div>
 	</div>
