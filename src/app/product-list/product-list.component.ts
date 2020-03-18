@@ -21,5 +21,6 @@ export class ProductListComponent implements OnInit {
   removeItem(id){
     return this.products = this.products.filter(product => product.id != id);
   }
+  
 
 }
